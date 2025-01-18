@@ -134,6 +134,20 @@ button {
     color: rgb(138, 212, 255);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input:hover:invalid {
+    outline: 2px dashed red;
+}
+
 input:invalid:focus{
     border: none;
     outline: 2px solid red;
