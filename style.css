@@ -24,7 +24,7 @@ body{
 
 .logo {
     display: flex;
-    margin-top: 25vh;
+    margin-top: 20vh;
     margin-bottom: auto;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.2);
@@ -58,4 +58,82 @@ body{
 
 .form-part {
     flex: 8;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    flex: 15;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+.bolt {
+    font-size: 1.3vw;
+    padding-left: 3vw;
+    width: 40vw;
+    font-weight: bold;
+}
+
+.header > .bolt:first-child {
+    margin-top: 16vh;
+}
+
+.header + div {
+    flex: 14;
+    padding-left: 3vw;
+    box-sizing: border-box;
+}
+
+.footer {
+    flex: 15;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+.fgroup, .sgroup{
+    display: flex;
+    width: 15vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+}
+
+input {
+    width: 10vw;
+    height: 2vh;
+    background-color: #f9fafc;
+    border-right: solid 0.3vh #E5E7EB;
+    border-bottom: solid 0.3vh #E5E7EB;
+    border-top: solid 0.3vh rgb(59, 59, 59);
+    border-left: solid 0.3vh rgb(59, 59, 59);
+    border-radius: 5px;
+}
+
+input + label{
+    margin-top: 2vh;
+}
+
+label{
+    font-size: 1.6vh;
+}
+
+.footer{
+    padding-left: 3vw;
+}
+
+button {
+    border-radius: 5px;
+    width: 15vw;
+    height: 6vh;
+    margin-top: 2vw;
+    background-color: rgb(12, 98, 211);
+    color: rgb(138, 212, 255);
+}
+
+button + p>a {
+    color: rgb(12, 98, 211);
 }

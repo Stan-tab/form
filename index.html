@@ -16,12 +16,36 @@
             <p class="thanks">Photo by <a href="https://unsplash.com/@jackwhite2803?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jack White</a> on <a href="https://unsplash.com/photos/a-long-hallway-with-a-blue-light-at-the-end-of-it-Yr5ZZbfJK9k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
         </div>
         <div class="form-part">
-            <div class="header"></div>
+            <div class="header">
+                <p style="margin-bottom: 0px;" class="bolt">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p style="margin: 0px;" class="bolt"> Sign up <i>now</i> to get started.</p>
+                <p class="bolt">You <i>know</i> you want to.</p>
+            </div>
             <div>
-                <form action="" method="post">
+                <p class="bolt" style="padding: 0px;">Let's do this!</p>
+                <form action="https://httpbin.org/post" method="post">
+                    <div class="fgroup">
+                        <label for="user_name">FIRST NAME</label>
+                        <input type="text" id="user_name" name="user_name" required>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="user_pass">PASSWORD</label>
+                        <input type="password" id="user_pass" name="user_pass" minlength="8" pattern="(\d{5})" required>
+                    </div>
+                    <div class="sgroup">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" name="last_name">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="number" id="phone" name="phone" required>
+                        <label for="confirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm" name="confirm" minlength="8" pattern="(\d{5})" required>
+                    </div>
                 </form>
             </div>
-            <div class="footer"></div>
+            <div class="footer">
+                <button>Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
         </div>
     </div>
 </body>
