@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.mainbox {
+    display: flex;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: odin;
+    src: url(./imgs/Norse-Bold.otf);
+}
+
+.background-logo {
+    flex: 4;
+    background-image: url(./imgs/jack-white-Yr5ZZbfJK9k-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 160vh;
+}
+
+.logo {
+    display: flex;
+    margin-top: 25vh;
+    margin-bottom: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 9.5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > img {
+    height: 10vh;
+    margin-right: 10px;
+}
+
+.logo > img+p{
+    font-family: odin;
+    font-weight: bolder;
+    color: aliceblue;
+    font-size: 6.5vh;
+}
+
+.thanks {
+    margin-top: 52vh;
+    font-size: 2vh;
+    text-align: center;
+    color: aliceblue;
+    a {
+        color: rgb(197, 221, 241);
+        text-decoration: none;
+    }
+}
+
+.form-part {
+    flex: 8;
+}
